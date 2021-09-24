@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+<div class="container">
+    <div class="title-container">
+        <h1>Seach hundreds of travel sites at once</h1>
+    </div>
+    <div class="panel-menu-container">
+        <div class="passenger-options">
+            <div onclick="selectItem(event)" class="pass-option">
+                <span class="pass-option-value">Round-trip</span>
+                <span class="fa fa-angle-down"></span>
+                <div class="options">
+                    <l1 class="item" onclick="selectOption(event)">Round-trip</l1>
+                    <l1 class="item" onclick="selectOption(event)">item 2</l1>
+                    <l1 class="item" onclick="selectOption(event)">item 3</l1>
+                </div>
+            </div>
+            <div onclick="selectItem(event)" class="pass-option">
+                <span class="pass-option-value"> 1 Adult</span>
+                <span class="fa fa-angle-down"></span>
+                <div class="options">
+                    <l1 class="item" onclick="selectOption(event)">1 Adult</l1>
+                    <l1 class="item" onclick="selectOption(event)">item 2</l1>
+                    <l1 class="item" onclick="selectOption(event)">item 3</l1>
+                </div>
+            </div>
+            <div onclick="selectItem(event)" class="pass-option">
+                <span class="pass-option-value">Economy</span>
+                <span class="fa fa-angle-down"></span>
+                <div class="options">
+                    <l1 class="item" onclick="selectOption(event)">Economy</l1>
+                    <l1 class="item" onclick="selectOption(event)">item 2</l1>
+                    <l1 class="item" onclick="selectOption(event)">item 3</l1>
+                </div>
+            </div>
+        </div>
+        <div class="flight-options">
+            <div class="countries-options">
+            <div class="flight-options-button">
+                <div class="icon">
+                    <span class="fa fa-plane fa-lg"></span>
+                </div>
+                <input type="text" class="form-control" placeholder="From"/>
+            </div>
+            <div onclick="changePlaces(event)" class="flight-options-button switch-option">
+                <div class="arrow-button">
+                    <span class="fa fa-arrow-right fa-lg"></span>
+                    <span class="fa fa-arrow-left fa-lg"></span>
+                </div>
+            </div>
+            <div class="flight-options-button">
+                <div class="icon">
+                    <span class="fa fa-plane fa-lg"></span>
+                </div>
+                <input type="text" class="form-control" placeholder="To"/>
+            </div>
+        </div>
+            <div class="flight-options-button calendar-option">
+                <div class="calendar">
+                    <div class="icon">
+                        <span class="fa fa-calendar fa-lg"></span>
+                        <span>Thu 7/18</span>
+                    </div>
+                    <div class="">
+                        <span class="fa fa-angle-left "></span>
+                        <span class="fa fa-angle-right "></span>
+                    </div>
+                </div>
+                <div class="calendar">
+                    <div class="icon">
+                        <span class="fa fa-calendar fa-lg"></span>
+                        <span>Thu 7/18</span>
+                    </div>
+                    <div>
+                        <span class="fa fa-angle-left "></span>
+                        <span class="fa fa-angle-right "></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="flight-options-button search-button"><span class="fa fa-search fa-lg"></span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <script src="js/main.js"></script>
+</footer>
+</body>
+</html>
